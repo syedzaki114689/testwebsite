@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <title>Test Website</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">Test Website</a></h1>
+      <h2>This is another test page</h2>
+    </div>
+    <form action="/search" method="GET">
+      <fieldset>
+        <legend>Search:</legend>
+        <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website &hellip;')? '' : this.value ;">
+        <input type="submit" id="sf_submit" value="submit" onclick="">
+      </fieldset>
+    </form>
+   </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+    </section>
+    <h1>This is another test page</h1>
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+      </section>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+  </footer>
+</div>
+</body>
+</html>

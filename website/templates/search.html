@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <title>Test Website</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">Test Website</a></h1>
+      <h2>This is a your seach page</h2>
+    </div>
+    <form action="/search" method="GET">
+      <fieldset>
+        <legend>Search:</legend>
+        <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website &hellip;')? '' : this.value ;">
+        <input type="submit" id="sf_submit" value="submit" onclick="">
+      </fieldset>
+    </form>
+   </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <!-- Slider -->
+    <section id="slider" class="clear">
+    </section>
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        
+    <div id="homepage" class="last clear">
+      <section class="one_quarter">
+        <h2 class="title">Blog</h2>
+        <article>
+          <header>
+            <h2>Post Title</h2>
+            <address>
+            <a href="#">Admin</a>, domainname.com
+            </address>
+            <time datetime="2020-04-06">Friday, 6<sup>th</sup> April 2000</time>
+          </header>
+          <p>something</p>
+          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+        </article>
+      </section>
+      <section class="one_quarter">
+        <h2 class="title">Quick Links</h2>
+        <nav>
+          <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">anything else you can think of</a></li>
+            <li><a href="#">i dont know</a></li>
+            <li class="last"><a href="#">comon man</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="two_quarter lastbox">
+        <h2 class="title">About US</h2> 
+        <p>i am a undergrad student persuing my degree in computer science!</p>
+        <footer class="more"><a href="#">Read More &raquo;</a></footer>
+      </section>
+    </div>
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+  </footer>
+</div>
+</body>
+</html>
